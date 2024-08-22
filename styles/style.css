@@ -1,0 +1,65 @@
+@import url('../styles/shared.css');
+/* Hero section */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=New+Amsterdam&family=Playwrite+NG+Modern:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+/*   background-image: url('/img/background-1.PNG');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+section{
+  display: flex;
+  justify-content: space-around;
+}
+
+h1{
+  font-size: 6rem;
+  margin-top: 15%;
+  text-shadow: 2px 3px 2px #000;
+  font-family: "Indie Flower", cursive;
+}
+
+.tittle-h1{
+  color: #f2ff04;
+}
+
+.play-now-btn{
+  margin-top: 10%;
+  width: 220px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: #f2ff04;
+  color: #000000;
+  box-shadow: 1px 2px 8px #000000;
+  margin-left: 10%;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  }
+
+.play-now-btn:hover{
+  border: 2px solid #f2ff04;
+  color: #f2ff04;
+  background-color: transparent;
+  transition: 0.3s;
+  }  
+
+  .img-world{
+    margin-top: 3%;
+    width: 500px; 
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover; 
+   /*  */
+    box-shadow: 5px 5px 89px 34px rgb(238, 238, 238);
+  }
+  
+
+  .hands-img{
+    width: 600px;
+  }
+
+
+

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=New+Amsterdam&family=Playwrite+NG+Modern:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  background-image: url('../img/background-2.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-button{
+  display: flex;
+  font-weight: bold;
+  flex-direction: row-reverse;
+  margin: 2%;
+  color: #ffee04;
+  font-family: "Indie Flower", cursive;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+
+.nav-button:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title{
+  margin: 1%;
+  font-size: 4rem;
+  text-shadow: 3px 3px 3px #000;
+  font-family: "New Amsterdam", system-ui;
+  font-family: "Indie Flower", cursive;
+}
+
+h2{
+  font-size: 2rem;
+  font-family: "Playwrite NG Modern", system-ui;
+  margin: 2%;
+}
+
+.icon-h2{
+  font-size: 2rem;
+}
+
+.box-rules{
+  display: flex;
+  justify-content: center;
+  margin-top: 4.3%;
+}
+
+.rules{
+  background-color: #fff;
+  color: #000;
+  width: 610px;
+  height: 360px;
+  box-shadow: 3px 2px 3px #0b1b39;
+  border-radius: 5px;
+}
+
+ol{
+ list-style-type: none;
+ padding: 0% 3%;
+}
+
+.title-box-rules{
+  box-shadow: 2px 3px 2px #161e2d;
+  padding: 1%;
+}
+
+.h2-rules-box{
+  font-size: 1.7rem;
+}
+
+.rules-list{
+  padding: 2% 1%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+span{
+  color: #0458ff;
+  font-size: 1.5rem;
+}
+
+li{
+  margin-bottom: 2%;
+  font-size: 1.4rem;
+}
+
+h3{
+  color: #ffee04;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 3.3rem;
+  font-family: "Indie Flower", cursive;
+}
+
+.message-div{
+  text-align: center;
+}
+
+.play-now-btn, .exit-btn, .exit-btn:hover{
+  margin-top: 1%;
+  width: 250px;
+  height: 60px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.4rem;
+  background: #0544b9;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 3%;
+}
+
+.play-now-btn:hover, .exit-btn {
+  background-color: #fff;
+  color: #260e69;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.exit-btn{
+  background-color: #fff;
+  font-weight: bold;
+}
