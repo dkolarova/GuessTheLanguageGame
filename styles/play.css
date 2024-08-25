@@ -37,30 +37,19 @@ body{
   box-shadow: 1px 1px 5px #001e6f;
 }
 
-.timer{
-  background-color: #c7c5ff;
-  color: #000000;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.2rem;
-  width: 180px;
-  height: 60px;
-  padding: 2%;
+.timer-div{
+  background-color: #e1f5fe;
+  width: 7.5em;
+  height: 3em;
+  border-radius: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1.7em;
   margin-top: 2%;
-  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
 }
-
-
-.time{
- background-color: #260e69;
- color: #ffffff;
- text-align: center;
- font-size: 1.2rem; 
- margin: 2%;
- padding: 5%;
- border-radius: 5px;
-}
-
 
 .btn-grid{
   display: grid;
