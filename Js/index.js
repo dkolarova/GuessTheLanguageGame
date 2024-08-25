@@ -2,12 +2,14 @@
 let startBtn = document.getElementById('start-btn')
 let container = document.getElementById('container')
 let questionContainer = document.getElementById('question-container')
+let timeLeft = document.getElementById('time-left-js')
 let questionElement = document.getElementById('question')
 let options = document.getElementById('options-buttons')
 let nextButton = document.getElementById('next-btn')
 let message = document.getElementById('message-js')
 let currentQuestionIndex = 0;
-let score = 0;
+let count = 11;
+
 
 // Start Button ('Show container')
 startBtn.addEventListener('click', () => {
@@ -16,6 +18,28 @@ startBtn.addEventListener('click', () => {
   questionContainer.classList.remove('hide')
   startQuiz()
 })
+
+
+// Update Timer
+function updateTimer(){
+  if(count > 0){
+    count--;
+    timeLeft.innerText = `${count}s`
+  }else{
+    clearInterval(timerInterval)
+    submitQuiz()
+  }
+}
+
+//Start timer
+const timerInterval = setInterval(updateTimer, 1000)
+
+// submit
+ function submitQuiz(){
+  document.querySelectorAll('.btn').forEach(button => {
+    button.disabled = true;
+  })
+ }
 
 // Start quiz
 function startQuiz(){
@@ -65,6 +89,9 @@ function selectAnswer(e){
   })
   nextButton.style.display = 'block'
   nextButton.classList.add('next-btn-active')
+
+  
+
 }
 
 //Reset state
@@ -86,7 +113,7 @@ function showScore(){
   nextButton.style.display = 'block'
 
   if(score <= 5){
-    questionElement.innerHTML = `Your score ${score} out of ${questions.length}☹️`
+    questionElement.innerHTML = `Your score ${score} out of ${questions.length}☹️`  
     message.innerHTML = `You can do it better!😉` 
     
   }else if(score > 5){
